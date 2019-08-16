@@ -15,12 +15,11 @@ import com.mars.controller.RobotControl;
 import com.mars.model.Ground;
 import com.mars.model.OutOfAreaException;
 import com.mars.model.Position;
-import com.mars.model.Robot;
 
 @RestController
 public class RobotController {
 
-	@RequestMapping(value= "rest/mars/{commands}", method = RequestMethod.GET)
+	@RequestMapping(value= "rest/mars/{commands}", method = RequestMethod.POST)
     public ResponseEntity getRobot(@PathVariable("commands") String commands) {
 		try {
 			RobotControl robotControl = new RobotControl(parseMovements(commands), new Position(0, 0), new Ground(5, 5));
