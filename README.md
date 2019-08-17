@@ -67,7 +67,6 @@ Saída esperada: 400 Bad Request
 
 # Requisitos técnicos:
 
-Deve ter teste
 O desafio deve ser entregue escrito utilizando Java 8;
 O projeto deverá ser compilado utilizando o Maven;
 Deverão ser utilizadas apenas as biblioteca do SpringBoot e JUnit;
